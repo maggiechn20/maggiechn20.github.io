@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecc8af;
+  font-family: "Garamond", serif;
+}
+
+#logo {
+  color: white;
+  font-family: "Abril Fatface";
+}
+
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+
+.line1,
+.line2,
+.line3 {
+  height: 0.2rem;
+  width: 2rem;
+  margin: 0.4rem;
+  background: white;
+}
