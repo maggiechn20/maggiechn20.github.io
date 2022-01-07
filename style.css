@@ -34,3 +34,109 @@ body {
   margin: 0.4rem;
   background: white;
 }
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecc8af;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 2rem;
+  flex: 1;
+  flex-basis: 25rem;
+  position: relative;
+}
+
+.hero-img {
+  flex: 1;
+  flex-basis: 25rem;
+  position: relative;
+}
+
+.hero-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.name-span,
+.second-span,
+.third-span {
+  color: #ce796b;
+}
+
+.hero-desc h2 {
+  font-size: 5rem;
+}
+
+.hero-desc p {
+  font-size: 1.8rem;
+  padding: 1rem 0rem;
+}
+
+.first-exp,
+.second-exp,
+.third-exp {
+  font-size: 1.3rem;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: fixed;
+  background: #495867;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: -1;
+}
+
+.nav-links {
+  flex-basis: 20rem;
+  font-size: 2rem;
+}
+
+.nav-links h3 {
+  padding: 0.7rem 1.5rem;
+}
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ecc8af;
+  width: 100%;
+  height: 100%;
+}
