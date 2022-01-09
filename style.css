@@ -13,6 +13,7 @@ body {
 #logo {
   color: white;
   font-family: "Cormorant", serif;
+  text-decoration: none;
 }
 
 .nav-header {
@@ -29,20 +30,14 @@ body {
   position: relative;
 }
 
-.line1,
-.line2,
-.line3 {
-  height: 0.2rem;
-  width: 2rem;
-  margin: 0.4rem;
-  background: white;
-  pointer-events: none;
-  z-index: 2;
+.nav-bar a {
+  color: white;
+  text-decoration: none;
 }
 
 .slide {
   min-height: 90vh;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 1.5rem auto;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -68,8 +63,8 @@ body {
 }
 
 .hero-img img {
-  height: 90%;
-  width: 90%;
+  height: 95%;
+  width: 95%;
   object-fit: cover;
   overflow: hidden;
   border-radius: 7%;
@@ -90,8 +85,7 @@ body {
   padding: 1rem 0rem;
 }
 
-.first-exp,
-.second-exp,
+.project,
 .third-exp {
   font-size: 1.3rem;
   padding: 0.5rem 0.5rem;
@@ -156,6 +150,10 @@ body {
 
 .resume {
   font-size: 2.3rem;
+}
+
+.resume a {
+  color: rgb(201, 201, 201);
 }
 
 .reveal-img,
