@@ -6,18 +6,18 @@
 
 body {
   background: #ecc8af;
-  font-family: "Garamond", serif;
+  font-family: "Cormorant", serif;
   overflow-x: hidden;
 }
 
 #logo {
   color: white;
-  font-family: "Abril Fatface";
+  font-family: "Cormorant", serif;
 }
 
 .nav-header {
   min-height: 10vh;
-  font-size: 1rem;
+  font-size: 1.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +41,7 @@ body {
 }
 
 .slide {
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0 auto 0 auto;
   width: 80%;
   display: flex;
@@ -68,10 +68,11 @@ body {
 }
 
 .hero-img img {
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 7%;
 }
 
 .name-span,
@@ -102,6 +103,7 @@ body {
 .nav-bar {
   position: fixed;
   background: #495867;
+  color: white;
   width: 100%;
   height: 100%;
   top: 0;
@@ -117,10 +119,27 @@ body {
 
 .burger {
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
+
+#cap {
+  width: 3rem;
+  height: 1rem;
+  object-fit: cover;
+  object-position: 0% 10%;
+}
+
+#can {
+  width: 3rem;
+  height: 2.5rem;
+  object-fit: cover;
+  object-position: 0% 80%;
+}
+
 .nav-links {
   flex-basis: 20rem;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .nav-links h3 {
@@ -135,8 +154,8 @@ body {
   padding: 1rem 0rem;
 }
 
-.contact p {
-  font-size: 1.2rem;
+.resume {
+  font-size: 2.3rem;
 }
 
 .reveal-img,

@@ -32,27 +32,26 @@ function animateSlides(){
     });
 }
 
+//Animate navigation tab opening
 const burger = document.querySelector('.burger');
-
 function navOpen(e){
     if (!e.target.classList.contains("active")){
         e.target.classList.add('active');
         // change the burger some how
-        gsap.to('.line1', 0.5, {rotate: "45"})
+        gsap.to('#cap', 0.5, {rotate: "23", x: 5, y: -5});
         // expand the nav page
         gsap.to('.nav-bar', 1, {clipPath:"circle(2000px at 100% -10%"});
         document.body.classList.add('hide');
     } else{
         e.target.classList.remove('active');
         // change the burger some how
-        gsap.to('.line1', 0.5, {rotate: "0"})
+        gsap.to('#cap', 0.5, {rotate: "0", x: 0, y: 0});
         // expand the nav page
         gsap.to('.nav-bar', 1, {clipPath:"circle(50px at 100% -10%"});
         document.body.classList.remove('hide');
     }
 }
-// Add event listener for click of burger
+
+ // Add event listener for click of burger
 burger.addEventListener('click', navOpen); 
-
-
 animateSlides();

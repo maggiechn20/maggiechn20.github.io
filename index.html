@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maggie's Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head> 
-<body> 
+<body data-barba="wrapper"> 
     <header class="nav-header">
         <h1><a href="./index.html" id="logo">home</a></h1>
         <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <img src="./img/burger_hat.png" alt="The top of my burger logo" id="cap">
+            <img src="./img/burger_can.png" alt="The can of my burger logo" id="can">
         </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
         <!--Change the class name to more descriptive ones later-->
         <section class="first slide"> 
             <div class="hero-img">
@@ -27,14 +28,12 @@
             <div class="hero-desc">
                 <div class="title">
                     <h2>
-                        hi, i'm <span class="name-span"> maggie! </span>
+                        Hi, I'm <span class="name-span"> Maggie Chen! </span>
                     </h2>
                     <div class="title-swipe t-swipe1"></div>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Autem voluptates a harum aliquid fuga facilis eos ipsam quia 
-                    voluptatem. Quam.
+                    I'm a student at the University of Toronto studying Computer Science and Neuroscience. 
                 </p>
                 <a class="first-exp">Explore.</a>
                 <div class="reveal-text"></div>
@@ -48,7 +47,7 @@
             <div class="hero-desc">
                 <div class="title">
                     <h2>
-                        More about <span class="second-span">me.</span>
+                        Me + <span class="second-span">Computer Science.</span>
                     </h2>
                     <div class="title-swipe t-swipe2"></div>
                 </div>
@@ -56,7 +55,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Provident, dicta?
                 </p>
-                <a href="./more/index.html" class="second-exp">Explore.</a>
+                <a class="second-exp">Explore.</a>
                 <div class="reveal-text"></div>
             </div>
         </section>
@@ -68,7 +67,7 @@
             <div class="hero-desc">
                 <div class="title">
                     <h2>
-                        Even more about <span class="third-span">me.</span>
+                        Me + <span class="third-span"> Computer Science.</span>
                     </h2>
                     <div class="title-swipe t-swipe3"></div>
                 </div>
@@ -83,15 +82,14 @@
     </main>
     <nav class="nav-bar">
         <ul class="nav-links">
-            <h3>Twitter</h3>
-            <h3>Instagram</h3>
+            <h3>LinkedIn</h3>
             <h3>Git</h3>
+            <h3>Instagram</h3>
         </ul>
         <div class="contact">
-            <h2> Stay in touch. </h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Cum, consequatur!
+            <h2> Connect with me at maggiemc.chen@mail.utoronto.ca! </h2>
+            <p class="resume"> 
+                Resume <a href="./documents/2022 Resume Maggie Chen.pdf">here.</a>
             </p>
         </div>
     </nav>
@@ -118,9 +116,7 @@
     integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
     <script src="./app.js"></script>
-
 
 </body>
 </html> 
