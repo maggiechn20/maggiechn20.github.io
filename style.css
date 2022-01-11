@@ -60,6 +60,7 @@ body {
   flex: 1;
   flex-basis: 25rem;
   position: relative;
+  /* max-height: max-content; */
 }
 
 .hero-img img {
@@ -68,6 +69,50 @@ body {
   object-fit: cover;
   overflow: hidden;
   border-radius: 7%;
+}
+
+/* Flexbox for the different projects */
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: max-content;
+}
+
+/* Flexbox for the different components of a project: logo, and description*/
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  opacity: 100%;
+}
+
+.souschef {
+  flex: 1;
+  flex-basis: 12.5rem;
+}
+
+.mywebsite {
+  flex: 1;
+  flex-basis: 12.5rem;
+}
+
+.icon img {
+  position: relative;
+  width: 98%;
+  /* object-fit: contain; */
+  margin-right: 0.2rem;
+}
+
+.desc {
+  position: relative;
+  justify-content: center;
+  object-fit: cover;
+  width: 90%;
+  margin-top: 1rem;
 }
 
 .name-span,
@@ -85,7 +130,6 @@ body {
   padding: 1rem 0rem;
 }
 
-.project,
 .third-exp {
   font-size: 1.3rem;
   padding: 0.5rem 0.5rem;

@@ -32,6 +32,9 @@ function animateSlides(){
     });
 }
 
+// Call the animateSlides function
+animateSlides();
+
 //Animate navigation tab opening
 const burger = document.querySelector('.burger');
 function navOpen(e){
@@ -53,5 +56,24 @@ function navOpen(e){
 }
 
  // Add event listener for click of burger
-burger.addEventListener('click', navOpen); 
-animateSlides();
+ burger.addEventListener('click', navOpen); 
+
+
+
+//Animate project description
+const logos = document.querySelectorAll('.logo');
+function showDescription(){
+    
+    gsap.to('.logo', 0.5, {opacity: "0.9", y: -6});
+    gsap.to('.desc', 0.5, {opacity: "0.9", y: 12}); 
+}
+function hideDescription(){
+    gsap.to('.logo', 0.5, {opacity: "1", y: 0});
+    gsap.to('.desc', 0.5, {opacity: "1", y: 0}); 
+}
+
+// Add event listener for each project logo
+for (let x=0;x < logos.length;x++){
+        logos.item(x).addEventListener('mouseout', hideDescription,false); 
+        logos.item(x).addEventListener('mouseover', showDescription, false);
+} 
