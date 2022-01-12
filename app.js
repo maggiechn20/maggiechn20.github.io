@@ -27,7 +27,6 @@ function animateSlides(){
             reverse:false,
         })
         .setTween(slideTimeline)
-        .addIndicators()
         .addTo(controller);
     });
 }
