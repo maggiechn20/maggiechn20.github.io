@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 2rem;
   flex: 1;
   flex-basis: 25rem;
@@ -68,7 +68,6 @@ body {
   width: 95%;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 7%;
 }
 
 /* Flexbox for the different projects */
@@ -133,14 +132,6 @@ body {
 .hero-desc p {
   font-size: 1.8rem;
   padding: 1rem 0rem;
-}
-
-.third-exp {
-  font-size: 1.3rem;
-  padding: 0.5rem 0.5rem;
-  border: 1px solid black;
-  border-radius: 7%;
-  cursor: pointer;
 }
 
 .nav-bar {
@@ -217,4 +208,69 @@ body {
 
 body.hide {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    height: 65vh;
+    width: 55vh;
+    padding: 2rem;
+    margin: auto;
+  }
+
+  .hero-img projects {
+    height: 65vh;
+    width: 15vh;
+    padding: 2rem;
+    margin: auto;
+  }
+
+  #more {
+    width: 50vh;
+    object-fit: cover;
+  }
+  .hero-desc {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+
+  .hero-desc h2 {
+    font-size: 3rem;
+    padding: 0rem;
+    text-align: center;
+  }
+
+  .hero-desc p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .nav-links {
+    padding: 10rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .resume {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
