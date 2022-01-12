@@ -88,14 +88,6 @@ body {
   align-items: center;
   position: relative;
   opacity: 100%;
-}
-
-.souschef {
-  flex: 1;
-  flex-basis: 12.5rem;
-}
-
-.mywebsite {
   flex: 1;
   flex-basis: 12.5rem;
 }
@@ -108,11 +100,24 @@ body {
 }
 
 .desc {
-  position: relative;
+  position: absolute;
   justify-content: center;
   object-fit: cover;
   width: 90%;
   margin-top: 1rem;
+  opacity: 0;
+}
+
+.icon:hover .desc {
+  opacity: 1;
+}
+
+.desc:hover {
+  opacity: 1;
+}
+
+.icon img:hover {
+  opacity: 0.5;
 }
 
 .name-span,

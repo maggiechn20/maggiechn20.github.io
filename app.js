@@ -60,7 +60,7 @@ function navOpen(e){
 
 
 
-//Animate project description
+/* //Animate project description
 const logos = document.querySelectorAll('.logo');
 function showDescription(){
     
@@ -77,3 +77,4 @@ for (let x=0;x < logos.length;x++){
         logos.item(x).addEventListener('mouseout', hideDescription,false); 
         logos.item(x).addEventListener('mouseover', showDescription, false);
 } 
+ */
