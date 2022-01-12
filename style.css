@@ -68,8 +68,8 @@ body {
   width: 95%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 3%;
 }
-
 /* Flexbox for the different projects */
 .projects {
   display: flex;
@@ -91,32 +91,42 @@ body {
   flex-basis: 12.5rem;
 }
 
-.icon img {
+.project-img {
   position: relative;
   width: 98%;
   /* object-fit: contain; */
   margin-right: 0.2rem;
+  border-radius: 3%;
 }
 
-.desc {
+.project-desc {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 1rem;
   justify-content: center;
-  object-fit: cover;
-  width: 90%;
-  margin-top: 1rem;
+  align-items: center;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.6rem;
+  position: absolute;
+  text-align: center;
+  background: #ecc8af83;
   opacity: 0;
+  transition: opacity 0.4s;
 }
 
-.icon:hover .desc {
+.project-desc:hover {
   opacity: 1;
 }
 
-.desc:hover {
-  opacity: 1;
+.project-desc h2 {
+  font-size: 1.3rem;
 }
-
-.icon img:hover {
-  opacity: 0.5;
+.project-desc p {
+  font-size: 0.9rem;
 }
 
 .name-span,
@@ -221,7 +231,7 @@ body.hide {
     text-align: center;
   }
 
-  .hero-img {
+  .one {
     height: 65vh;
     width: 55vh;
     padding: 2rem;
@@ -237,7 +247,8 @@ body.hide {
 
   #more {
     width: 50vh;
-    object-fit: cover;
+    height: 50vh;
+    object-position: top;
   }
   .hero-desc {
     padding: 0rem 2rem 2rem 2rem;
@@ -272,5 +283,17 @@ body.hide {
   .resume {
     font-size: 1.8rem;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-desc h2 {
+    font-size: 1.5rem;
+  }
+  .project-desc p {
+    font-size: 1.1rem;
+  }
+  .project-desc i {
+    font-size: 1.2rem;
   }
 }
