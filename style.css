@@ -228,9 +228,9 @@ body.hide {
     margin: auto;
   }
 
-  .hero-img projects {
-    height: 65vh;
-    width: 15vh;
+  .two {
+    height: 35vh;
+    width: 65vh;
     padding: 2rem;
     margin: auto;
   }
