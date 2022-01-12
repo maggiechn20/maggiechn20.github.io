@@ -60,7 +60,7 @@ body {
   flex: 1;
   flex-basis: 25rem;
   position: relative;
-  /* max-height: max-content; */
+  margin-top: 2rem;
 }
 
 .hero-img img {
@@ -94,7 +94,6 @@ body {
 .project-img {
   position: relative;
   width: 98%;
-  /* object-fit: contain; */
   margin-right: 0.2rem;
   border-radius: 3%;
 }
