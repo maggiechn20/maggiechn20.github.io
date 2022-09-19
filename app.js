@@ -42,7 +42,7 @@ function navOpen(e){
         // change the burger some how
         gsap.to('#cap', 0.5, {rotate: "23", x: 5, y: -5});
         // expand the nav page
-        gsap.to('.nav-bar', 1, {clipPath:"circle(3000px at 100% -10%"});
+        gsap.to('.nav-bar', 1, {clipPath:"circle(3500px at 100% -10%"});
         document.body.classList.add('hide');
     } else{
         e.target.classList.remove('active');
